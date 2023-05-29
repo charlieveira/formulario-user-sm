@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário-cadastro-usuário</title>
+    <link rel="stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="./src/reset.css">
+    <link rel="shortcut icon" href="./src/img/icons8-hal-9000-16.png" type="image/x-icon">
+</head>
+<body>    
+    <div class="box-content">
+        <form  action="https://api.sheetmonkey.io/form/keDcXxqVoewYHMugtNcQXK" method="post" id="form">
+            <fieldset>
+                <legend>Cadastro</legend>                
+
+                <div class="box-input">
+                                        
+                    <input type="text" name="name" class="user" id="name"   required>
+                    <label class="legend" for="name">Nome Completo</label>
+                </div>
+
+                <div 
+                class="box-input">                    
+                    <input type="email" name="email" class="user" id="email"  required>
+                    <label class="legend" for="email">E-mail</label>
+                </div>
+
+                <div class="box-input">                    
+                    <input type="tel" name="tel" class="user" id="tel" required>
+                    <label class="legend" for="tel">Phone</label>
+                </div>              
+
+                <div class="genDate">
+                    <p>Genero:</p><br>                    
+                    <input type="radio" name="gen" id="fem" value="feminino" required>
+                    <label class="gen" for="fem">Feminino</label><br><br>
+
+                    <input type="radio" name="gen" id="masc" value="masculino" required>
+                    <label for="masc">Masculino</label><br><br>
+
+                    <input type="radio" name="gen" id="gemAut" value="gemAut" required>
+                    <label class="gen" for="gemAut">Genero Alternativo</label><br><br>
+
+                    <div class="dateNas-content">                        
+                        <input type="date" name="dateNas" id="dateNas" class=" date" required>
+                        <label class="gen" for="dateNas">Data de Nascimento</label>
+                    </div><br>                    
+                </div>
+
+                <div class="box-input">                    
+                    <input type="text" name="city" class="user" id="city" maxlength="15" required>
+                    <label class="legend" for="city">Cidade</label>
+                </div>
+
+                <div class="box-input">                    
+                    <input type="text" name="state" class="user" id="state" maxlength="15" required>
+                    <label class="legend" for="state">Estado</label>
+                </div>
+
+                <div class="box-input">                    
+                    <input type="text" name="address" class="user" id="address" required>
+                    <label class="legend" for="address">Endereço</label>
+                </div>
+                <div class="box-input message"> 
+                    <textarea name="msg" id="message" cols="30" rows="3" class="user"></textarea>                    
+                    <label class="legend" for="msg">Mensagem "Uma breve descrição"</label>
+                </div>
+
+                <div class="box-input password">                    
+                    <div>
+                        <input type="password" name="password" id="pass" class="user pass" minlength="8" required>
+                        <label class="leg" for="password" >Senha</label>                        
+                    </div>
+                    <div>
+                        <input type="password" name="confirm-password" id="passC" class="user pass"  required>
+                        <label class="leg" for="password" >Confirme Senha</label>                        
+                    </div>
+                </div>
+
+                <div class="resSub" >
+                    <button class="btnS" type="reset">Limpar</button>
+                    <input class="btnS" type="submit" value="Enviar" name="submit" id="submit">
+                </div>            
+
+            </fieldset>
+        </form>
+    </div>       
+    <a class="icons8" target="_blank" href="https://icons8.com/icon/39570/hal-9000">Icons8</a>
+</body>
+    <script src="./src/script.js"></script>
+</html>
